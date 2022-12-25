@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Book Management App</h1>
       <hr />
       <div className="links">
-        <NavLink to="/" className="link" activeClassName="active" exact>
+        <NavLink to="/" className="link" activeClassName="active">
           Books List
         </NavLink>
         <NavLink to="/add" className="link" activeClassName="active">

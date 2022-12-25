@@ -14,6 +14,9 @@ const BookForm = (props) => {
   const [errorMsg, setErrorMsg] = useState('');
   const { bookname, author, price, quantity } = book;
 
+
+
+  
   const handleOnSubmit = (event) => {
     event.preventDefault();
     const values = [bookname, author, price, quantity];
@@ -39,6 +42,10 @@ const BookForm = (props) => {
     }
     setErrorMsg(errorMsg);
   };
+
+
+
+
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -67,6 +74,10 @@ const BookForm = (props) => {
     }
   };
 
+
+
+
+  
   return (
     <div className="main-form">
       {errorMsg && <p className="errorMsg">{errorMsg}</p>}
