@@ -1,0 +1,15 @@
+# npm rebuild node-sass`on (Linux 64) and it worked. I don’t know why it didn’t work the first time. I’m not sure if it’s a bug or not. 
+
+
+#Latest version of the following packages as of 2022-12-31:
+
+# node version 
+# lodash version 
+# react-bootstrap version 
+# node-sass version 
+# react-router-dom 
+# uuid 
+
+
+# npm version  8.19.2
+# Node.js v16.18.1
