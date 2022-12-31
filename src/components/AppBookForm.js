@@ -81,7 +81,11 @@ const BookForm = (props) => {
   return (
     <div className="main-form">
       {errorMsg && <p className="errorMsg">{errorMsg}</p>}
+
+      
       <Form onSubmit={handleOnSubmit}>
+
+
         <Form.Group controlId="name">
           <Form.Label>Book Name</Form.Label>
           <Form.Control
@@ -93,6 +97,9 @@ const BookForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
+
+
+
         <Form.Group controlId="author">
           <Form.Label>Book Author</Form.Label>
           <Form.Control
@@ -104,6 +111,10 @@ const BookForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
+
+
+
+
         <Form.Group controlId="quantity">
           <Form.Label>Quantity</Form.Label>
           <Form.Control
@@ -115,6 +126,10 @@ const BookForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
+
+
+
+
         <Form.Group controlId="price">
           <Form.Label>Book Price</Form.Label>
           <Form.Control
@@ -126,9 +141,16 @@ const BookForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
+
+
+
+
         <Button variant="primary" type="submit" className="submit-btn">
           Submit
         </Button>
+
+
+
       </Form>
     </div>
   );
