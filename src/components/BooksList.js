@@ -1,10 +1,15 @@
+
+
 import React from "react";
 import _ from "lodash";
-import Book from "./ShowAddedBookWithDetails";
+import Book from "./BookCard";
+import BooksContext from "../context/BooksContext";
+import {useContext} from 'react';
 
 
 
-const BooksList = ({ books, setBooks }) => {
+const BooksList = ({history}) => {
+  const {books,setBooks}=useContext(BooksContext);
   // handleRemoveBook function
   const handleRemoveBook = (id) => {
     // filter out the book with the id and update the books state
@@ -25,7 +30,7 @@ const BooksList = ({ books, setBooks }) => {
             
           ))
         ) : (
-          <h1>No books to display</h1>
+          <p class='message'>No books to display</p>
         )}
       </div>
     </React.Fragment>
@@ -34,3 +39,6 @@ const BooksList = ({ books, setBooks }) => {
 
 // Finally we are exporting the BooksList component, so that we can use it in the App component as a child component
 export default BooksList;
+
+
+// Description: This is the BooksList component, which will render the list of books, and also the Book component, and also the handleRemoveBook function, which will be used to remove the book from the books array, and also the handleEditBook function, which will be used to edit the book in the books array.
