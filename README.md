@@ -1,9 +1,9 @@
-# Bookshelf
+# Book.shh
 
 
 
 ##
-Welcome to the Bookshelf repository! This project is an online marketplace for books, built using React, MongoDB, and Node.js.
+Welcome to the Book.shh repository! This project is an online marketplace for books, built using React, MongoDB, and Node.js.
 
 The repository includes the code for the front-end and back-end of the site, as well as a powerful search engine and advanced CRUD (Create, Read, Update, Delete) operations for managing the catalog and user accounts.
 
